@@ -1,1 +1,369 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: auto;
+    padding: auto;
+    display: inline;
+    box-sizing:  border-box;
+    overflow-x: hidden;
+}
+
+main{
+    margin: 1rem 2rem;
+}
+
+/* estilos barra de navegacion */
+
+.head-title {
+    font-size: 0.8em;
+}
+
+.me-auto {
+    text-align: right!important;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+    margin-right: 0rem;
+    font-size: 1.5rem!important;
+}
+
+.navbar-nav {
+    margin-right: 1.5rem!important;
+}
+
+#arg_prog{
+    margin-right: 1rem;
+}
+.navbar-toggler{
+    margin-right: 1.5rem;
+    
+}
+
+.modal-backdrop {
+    z-index: 100!important;
+}
+
+/* ******************************** */
+
+/* carrousel */
+
+#carouselExampleFade {
+    z-index: 3!important;
+    padding-top: 50px;
+}
+
+/* ******************************** */
+
+/* foto perfil y Titulo profesional */
+
+blockquote{
+    padding-top: 62%;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;   
+}
+
+.imag_pie{
+    display: block;
+    width: 40%;
+    box-sizing: content-box;
+    float: left;
+}
+
+.btn-block {
+    display:block;
+    text-align:center;
+    padding-left:45%;
+}
+
+.pie_name{
+    padding-left: 2rem;
+}
+
+#imag{
+    margin-left: 12%!important;
+    width: 50%!important;
+    position: relative;
+    transform: translate(0px,-60px)!important;
+    z-index: 4!important;   
+}
+
+#pen-imag{
+    z-index: 5;
+    transform: translate(-70px,10px);
+    position: relative;
+}
+
+/* ******************************** */
+
+/* estilos para cards */
+
+.exp {
+    padding: 1.5em;
+}
+
+.edu {
+    padding: 1.5em;
+}
+
+.hab {
+    padding: 1.5em;
+}
+
+.proyecto {
+    padding: 1.5em;
+}
+
+.card-title {
+    display:inline;
+    margin-left:40%;
+}
+
+.sub-1 {
+    padding-left:2em;
+    display:inline;
+}
+
+.acerca_de{
+    display: inline;
+    width: 60%;
+    box-sizing: content-box;
+    float: right;
+    padding-top:6rem;
+}
+
+#experiencia {
+    display: inline-block;
+    padding:2rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+
+#educacion, #hard_soft, #proyectos{
+    padding:2rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+} 
+
+/* ******************************** */
+
+/* barras progreso */
+
+.progress{
+    display: inline-block!important;
+    width: 24.5%;
+    margin: 2% 4%;
+}
+
+.info_barra{
+    margin: 0 8%;
+}
+.info_barra2 {
+    display: none;
+}
+.info_min{
+    display: none;
+}
+
+/* ******************************** */
+
+/* iconos edicion */
+
+.fa-pen:hover, .fa-trash-can:hover, .fa-plus:hover  {
+    background: gray;
+}
+
+.fa-pen {
+    font-size: 25px;
+    border-radius:50%;
+}
+
+.fa-trash-can {
+    font-size: 25px;
+    border-radius:50%;
+}
+
+.fa-plus {
+    font-size: 28px;
+    border-radius:50%;
+    display:inline;
+}
+
+.div-exp {
+    display:inline;
+}
+
+.div-exp2 {
+    display:inline;
+}
+
+/* ******************************** */
+
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .me-3 {
+        margin-left: 1rem!important;
+    }
+
+    .btn-primary {
+        padding-top: 0.5em;
+    }
+
+    blockquote{
+        display: block !important;
+        padding-top: 320px;
+    }
+
+    .pie_name {
+        padding-left:0%;
+        margin-left:0%;
+    }
+
+    .navbar-collapse{
+        margin-right: 0% !important;
+        float: left !important;
+    }
+    .info_barra{
+        display: none;
+        margin: 3% 12%;
+    }
+
+    .info_barra2 {
+        display: block;
+        margin-left: 3rem;
+    }
+
+    .acerca_de{
+        padding-top: 2px;
+        padding-bottom: 50px;
+        display: inline-block;
+        width: 100%;
+    }
+    .imag_pie{
+        display: inline-block;
+        width: 110%;
+        text-align: center;
+    }
+
+    #imag{
+        display: block!important;
+        width: 230px!important;
+        transform: translate(0px,-50px)!important;
+        margin-left: 20%!important;
+    }
+
+    #arg_prog {
+        width: 60px;
+        height: 45px;
+    }
+
+    .nav-item {
+        padding-left: 5%!important;
+    }
+
+    .progress {
+        display:block!important;
+        width: 50%;
+    }
+
+    .exp {
+        padding-left: 0rem;
+        text-align: center;
+    }
+    
+    .edu {
+        padding-left: 0rem;
+        text-align: center;
+    }
+    
+    .hab {
+        padding-left: 0rem;
+        text-align: center;
+    }
+    
+    .proyecto {
+        padding-left: 0rem;
+        text-align: center;
+    }
+
+    .sub-1 {
+        padding-left: 1em;
+    }
+
+    #carouselExampleFade {
+        padding-top: 70px;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .navbar-brand >span {
+        display:none;
+    }
+
+    #imag{
+        margin-left: 10%!important;
+    }
+
+    .imag_pie{
+        text-align: left;
+        margin-right: 10%!important;
+    }
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 451px) {
+    #imag{
+        margin-left: 25%!important;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 769px) {
+
+    body {
+        overflow-x: hidden!important;
+        width: 90%!important;
+    } 
+    .container-fluid {
+        margin: 0 auto!important;
+        position: sticky;
+        }
+
+    #imag{
+        margin-left: 18%!important;
+        transform: translate(0px,-50px)!important;
+    }
+    .navbar {
+        display: inline!important;
+    }
+
+    .navbar-collapse{
+        float: right !important;
+        width: 100%!important;
+    }
+    .nav-item {
+        align-items:flex-end!important;
+    }
+
+    #carouselExampleFade {
+            padding-top:81px!important;
+        }
+    .imag_pie {
+        width:250px;
+    }
+    #imag{
+        width: 200px!important;
+    }
+}
