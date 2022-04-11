@@ -3,25 +3,18 @@
     <div class="div-exp">
         <a href="#" class="btn"><i class="fa-solid fa-plus"></i></a>
       </div>
+<ul class="item-list">
+  <li *ngFor="let proyect of proyectList">
     <div class="proyecto">
-        <h4 class="sub-1">Portfolio Web</h4>
+        <h4 class="sub-1">{{proyect.title}}</h4>
         <div class="div-exp2">
             <a href="#" class="btn"><i class="fa-solid fa-pen"></i></a>
             <a href="#" class="btn"><i class="fa-regular fa-trash-can"></i></a>
           </div>
-        <h5>Fecha: <time>Febrero 2022</time> - <time>Agosto 2022</time></h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita culpa illo nam corrupti aut veritatis optio architecto blanditiis omnis quaerat quo rerum qui sint veniam, error possimus explicabo alias.</p>
+        <h5>Fecha: <time>{{proyect.start}}</time> - <time>{{proyect.end}}</time></h5>
+        <p>{{proyect.detail}}</p>
     </div>
-    <div class="proyecto">
-        <h4 class="sub-1">Practica Profesionalizante I Geo Pet</h4>
-        <div class="div-exp2">
-            <a href="#" class="btn"><i class="fa-solid fa-pen"></i></a>
-            <a href="#" class="btn"><i class="fa-regular fa-trash-can"></i></a>
-          </div>
-        <h5>Fecha: <time>Julio 2021</time> - <time>Diciembre 2021</time></h5>
-        <p>Proyecto integral de la asignatura Práctica Profesionalizante, ciclo 2021 de la Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales del Instituto Superior Politécnico Córdoba. 
-          En este proyecto si incoporaron los saberes adquiridos en las materias de Programación 1, Programación Web 1 y Base de datos. Se implementó HTML5 para maquetado,
-          CSS3 para implementar estilos, Javascript para funcionalidades y Bootstrap. Este proyecto comprende una App que permite la localización de mascotas usando el sistema GPS. Se monitorea la ubicación en tiempo real a través de un dispositivo integrado al collar del animal.</p>
-        <span>Visita el link a <a href="https://geo-pet.000webhostapp.com/index.html" target="_blank">Geo Pet</a> para conocerlo.</span>
-    </div>
+  </li>
+</ul>
+<span>Visita el link a <a href="https://geo-pet.000webhostapp.com/index.html" target="_blank">Geo Pet</a> para conocerlo.</span>
 </article>

@@ -1,33 +1,20 @@
 <article id="educacion">
-    <h3 class="card-title">Educación</h3>
-    <div class="div-exp">
-        <a href="#" class="btn"><i class="fa-solid fa-plus"></i></a>
-    </div>
-    <div class="edu">
-        <h4 class="sub-1">Instituto Superior Politécnico Córdoba</h4>
-        <div class="div-exp2">
-            <a href="#" class="btn"><i class="fa-solid fa-pen"></i></a>
-            <a href="#" class="btn"><i class="fa-regular fa-trash-can"></i></a>
-          </div>
-        <h5>Carrera: Técnico Superior en Desarrollo Web y aplicaciones digitales</h5>
-        <h5>Fecha: <time>Marzo 2021</time> - <time>al presente</time></h5>
-    </div> 
-    <div class="edu">
-        <h4 class="sub-1">Instituto Universitario Aeronáutico</h4>
-        <div class="div-exp2">
-            <a href="#" class="btn"><i class="fa-solid fa-pen"></i></a>
-            <a href="#" class="btn"><i class="fa-regular fa-trash-can"></i></a>
-          </div>
-        <h5>Carrera: Contador Público</h5>
-        <h5>Fecha: <time>Marzo 2016</time> - <time>al presente</time></h5>
-    </div>
-    <div class="edu">
-      <h4 class="sub-1">I.P.E.M. N° 17 Paulo Freire</h4>
-      <div class="div-exp2">
-        <a href="#" class="btn"><i class="fa-solid fa-pen"></i></a>
-        <a href="#" class="btn"><i class="fa-regular fa-trash-can"></i></a>
-      </div>
-      <h5>Carrera: Bachiller - Especialidad en Ciencias Naturales</h5>
-      <h5>Fecha: <time>Marzo 2001</time> - <time>Diciembre 2006</time></h5>
-  </div>  
+ 
+        <h3 class="card-title">Educación</h3>
+        <div class="div-exp">
+            <a href="#" class="btn"><i class="fa-solid fa-plus"></i></a>
+        </div>
+    <ul class="item-list">
+      <li *ngFor="let educacion of educationList">
+        <div class="edu">
+            <h4 class="sub-1">{{educacion.school}}</h4>
+            <div class="div-exp2">
+                <a href="#" class="btn"><i class="fa-solid fa-pen"></i></a>
+                <a href="#" class="btn"><i class="fa-regular fa-trash-can"></i></a>
+              </div>
+            <h5>Carrera: {{educacion.career}}</h5>
+            <h5>Fecha: <time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></h5>
+        </div>   
+    </li>
+  </ul>
 </article>

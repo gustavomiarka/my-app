@@ -121,7 +121,7 @@ blockquote{
 
 .card-title {
     display:inline;
-    margin-left:40%;
+    text-align: center;
 }
 
 .sub-1 {
@@ -151,6 +151,10 @@ blockquote{
     border-radius: 20px;
     margin-bottom: 1.5rem;
 } 
+
+.item-list{
+    list-style: none;
+}
 
 /* ******************************** */
 
@@ -198,6 +202,7 @@ blockquote{
 
 .div-exp {
     display:inline;
+    padding-left:15%;
 }
 
 .div-exp2 {
@@ -224,7 +229,6 @@ blockquote{
 
     blockquote{
         display: block !important;
-        padding-top: 320px;
     }
 
     .pie_name {
@@ -365,5 +369,8 @@ blockquote{
     }
     #imag{
         width: 200px!important;
+    }
+    blockquote{
+        padding-top: 12%;
     }
 }

@@ -1,0 +1,95 @@
+{
+    
+    "name": "Gustavo Ezequiel Miarka",
+    "backImage1": "./assets/mejores-cursos-de-programación.jpg", 
+    "backImage2":"./assets/top-lenguajes-programacion-2021.jpg",
+    "image": "./assets/Imagen1 (2).jpg",
+    "position": "Full Stack Developer Jr",
+    
+
+    "about": "Soy una persona responsable, organizada y atenta a los detalles. Tengo un alto compromiso por mis tareas. Poseo muy buena adaptabilidad a cualquier entorno laboral y excelente capacidad para trabajar en equipo. Habilidad para la resolución de problemas, capacidad analítica y aptitud para la optimización de recursos.",
+
+    "experience": [{
+        "position": "Atención al cliente - Cobranzas",
+        "company": "Tree Oss",
+        "start": "Julio 2016",
+        "end": "al presente",
+        "detail": "Me desempeño como agente de cobranzas y en el sector de atención al cliente. Manejo el área de logística del sector de Córdoba, además de la gestión del stock de productos."
+    },
+    {
+        "position": "Operario - Capacitador",
+        "company": "Plásticos Boulevares",
+        "start": "Mayo 2014",
+        "end": "Diciembre 2015",
+        "detail": "Ayudante de Operador de maquinas offset en seco. Tuve un excelente desempeño en el puesto, logrando optimizar tiempos y recursos. Encargado de la capacitación de nuevos ingresantes al sector."
+    },
+    {
+        "position": "Operario - Serigrafista",
+        "company": "Cor-Plast",
+        "start": "Octubre 2007",
+        "end": "Julio 2013",
+        "detail": "Inicié mis labores como operario de maquinas termosoldadoras, elaborando productos a partir de telas plásticas. Luego me especialicé en la impresión de los productos mediante la técnica de serigrafía. Posteriormente quedé a cargo del sector de impresión."
+    }
+    ],
+
+    "education": [{
+        "school": "Instituto Superior Politecnico Córdoba",
+        "career": "Técnico Superior en Desarrollo Web y aplicaciones digitales",
+        "start": "Marzo 2021",
+        "end": "al presente"
+    },
+    {
+        "school": "Instituto Universitario Aeronáutico",
+        "career": "Contador Publico",
+        "start": "Marzo 2016",
+        "end": "al presente"
+    },
+    {
+        "school": "I.P.E.M. N° 17 Paulo Freire",
+        "career": "Bachiller - Especialidad en Ciencias Naturales",
+        "start": "Marzo 2001",
+        "end": "Diciembre 2006"
+    }
+    ],
+
+    "habilidades": [{
+        "name": "Programación",
+        "progress":"45%"
+    },
+    {
+        "name": "Analisís de datos",
+        "progress":"75%"
+    },
+    {
+        "name": "Idioma Inglés",
+        "progress":"85%"
+    },
+    {
+        "name": "Flexibilidad",
+        "progress":"45%"
+    },
+    {
+        "name": "Trabajo en equipo",
+        "progress":"75%"
+    },
+    {
+        "name": "Gestión del tiempo",
+        "progress":"85%"
+    }
+    ],
+
+    "proyect": [{
+        "title": "Porfolio Web",
+        "start": "Febrero 2022",
+        "end": "Agosto 2022",
+        "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita culpa illo nam corrupti aut veritatis optio architecto blanditiis omnis quaerat quo rerum qui sint veniam, error possimus explicabo alias."
+    },
+    {
+        "title": "Practica Profesionalizante I Geo Pet",
+        "start": "Julio 2021",
+        "end": "Diciembre 2021",
+        "detail": "Proyecto integral de la asignatura Práctica Profesionalizante, ciclo 2021 de la Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales del Instituto Superior Politécnico Córdoba. En este proyecto si incoporaron los saberes adquiridos en las materias de Programación 1, Programación Web 1 y Base de datos. Se implementó HTML5 para maquetado, CSS3 para implementar estilos, Javascript para funcionalidades y Bootstrap. Este proyecto comprende una App que permite la localización de mascotas usando el sistema GPS. Se monitorea la ubicación en tiempo real a través de un dispositivo integrado al collar del animal. Visita el link a Geo Pet para conocerlo."
+    }
+    ]
+
+}
