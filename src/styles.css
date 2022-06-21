@@ -229,6 +229,7 @@ blockquote{
 
     blockquote{
         display: block !important;
+        padding-top: 32%;
     }
 
     .pie_name {
@@ -326,11 +327,20 @@ blockquote{
         margin-right: 10%!important;
     }
 
+    blockquote{
+        padding-top: 52%;
+    }
+
+
 }
 
 @media screen and (max-width: 767px) and (min-width: 451px) {
     #imag{
         margin-left: 25%!important;
+    }
+
+    blockquote{
+        padding-top: 42%;
     }
 }
 

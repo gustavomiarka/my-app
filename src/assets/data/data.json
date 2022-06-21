@@ -52,29 +52,31 @@
     }
     ],
 
-    "habilidades": [{
+    "habilidadHard": [{
         "name": "Programación",
-        "progress":"45%"
+        "progreso":"45%"
     },
     {
         "name": "Analisís de datos",
-        "progress":"75%"
+        "progreso":"75%"
     },
     {
         "name": "Idioma Inglés",
-        "progress":"85%"
-    },
-    {
+        "progreso":"85%"
+    }
+    ],
+
+    "habilidadSoft": [{
         "name": "Flexibilidad",
-        "progress":"45%"
+        "progreso":"45%"
     },
     {
         "name": "Trabajo en equipo",
-        "progress":"75%"
+        "progreso":"75%"
     },
     {
         "name": "Gestión del tiempo",
-        "progress":"85%"
+        "progreso":"85%"
     }
     ],
 
