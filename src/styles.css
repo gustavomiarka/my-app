@@ -53,8 +53,11 @@ main{
 
 #carouselExampleFade {
     z-index: 3!important;
-    padding-top: 50px;
+    padding-top: 80px;
+   
 }
+
+
 
 /* ******************************** */
 
@@ -135,6 +138,7 @@ blockquote{
     box-sizing: content-box;
     float: right;
     padding-top:6rem;
+    
 }
 
 #experiencia {
@@ -143,6 +147,8 @@ blockquote{
     border: 1px solid black;
     border-radius: 20px;
     margin-bottom: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 #educacion, #hard_soft, #proyectos{
@@ -150,6 +156,8 @@ blockquote{
     border: 1px solid black;
     border-radius: 20px;
     margin-bottom: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 } 
 
 .item-list{
@@ -334,7 +342,7 @@ blockquote{
 
 }
 
-@media screen and (max-width: 767px) and (min-width: 451px) {
+@media screen and (max-width: 768px) and (min-width: 451px) {
     #imag{
         margin-left: 25%!important;
     }
@@ -382,5 +390,14 @@ blockquote{
     }
     blockquote{
         padding-top: 12%;
+    }
+
+    #carouselExampleFade {
+        padding-top: 100px;
+    }
+
+    .d-block{
+        height:calc(100vh - 63px)!important;
+        width: 80vw;
     }
 }

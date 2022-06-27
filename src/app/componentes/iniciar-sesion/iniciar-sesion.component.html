@@ -23,9 +23,9 @@
         <p *ngIf="Password?.hasError('required')" class="text-danger">
           La contraseña es requerida.
         </p>
-        <!-- <p *ngIf="Password?.errors?.minlength" class="text-danger">
+        <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
           La contraseña debe ser de 8 o más caracteres.
-        </p> -->
+        </p>
       </div>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
