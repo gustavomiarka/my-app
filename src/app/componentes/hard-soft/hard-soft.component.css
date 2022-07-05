@@ -1,3 +1,32 @@
+.card-title{
+    display: block;
+}
+
+.hab{
+    display: inline-block;
+}
+
+
 i{
-    display:none;
+    /* display:none; */
+}
+
+.exp{
+    flex-direction: column;
+}
+
+.item-list{
+    padding-right: 32px;
+}
+
+.progress{
+    margin-top: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+    .exp{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
