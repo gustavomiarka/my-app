@@ -84,13 +84,15 @@
         "title": "Porfolio Web",
         "start": "Febrero 2022",
         "end": "Agosto 2022",
-        "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita culpa illo nam corrupti aut veritatis optio architecto blanditiis omnis quaerat quo rerum qui sint veniam, error possimus explicabo alias."
+        "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita culpa illo nam corrupti aut veritatis optio architecto blanditiis omnis quaerat quo rerum qui sint veniam, error possimus explicabo alias.",
+        "link" : "http://localhost:4200/portfolio"
     },
     {
-        "title": "Practica Profesionalizante I Geo Pet",
+        "title": "Geo Pet",
         "start": "Julio 2021",
         "end": "Diciembre 2021",
-        "detail": "Proyecto integral de la asignatura Práctica Profesionalizante, ciclo 2021 de la Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales del Instituto Superior Politécnico Córdoba. En este proyecto si incoporaron los saberes adquiridos en las materias de Programación 1, Programación Web 1 y Base de datos. Se implementó HTML5 para maquetado, CSS3 para implementar estilos, Javascript para funcionalidades y Bootstrap. Este proyecto comprende una App que permite la localización de mascotas usando el sistema GPS. Se monitorea la ubicación en tiempo real a través de un dispositivo integrado al collar del animal. Visita el link a Geo Pet para conocerlo."
+        "detail": "Proyecto integral de la asignatura Práctica Profesionalizante, ciclo 2021 de la Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales del Instituto Superior Politécnico Córdoba. En este proyecto si incoporaron los saberes adquiridos en las materias de Programación 1, Programación Web 1 y Base de datos. Se implementó HTML5 para maquetado, CSS3 para implementar estilos, Javascript para funcionalidades y Bootstrap. Este proyecto comprende una App que permite la localización de mascotas usando el sistema GPS. Se monitorea la ubicación en tiempo real a través de un dispositivo integrado al collar del animal.",
+        "link" : "https://geo-pet.000webhostapp.com/index.html"
     }
     ]
 

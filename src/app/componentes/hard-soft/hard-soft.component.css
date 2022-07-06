@@ -1,4 +1,13 @@
 .card-title{
+    display: inline-block;
+}
+
+.div-hab {
+    display:inline;
+    padding-left:15%;
+}
+
+.div-hab2{
     display: block;
 }
 
@@ -6,10 +15,6 @@
     display: inline-block;
 }
 
-
-i{
-    /* display:none; */
-}
 
 .exp{
     flex-direction: column;
