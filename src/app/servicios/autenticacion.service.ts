@@ -7,9 +7,22 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AutenticacionService {
-  currentUserObject: BehaviorSubject<any>;
+  url = 'http://localhost:8080/autenticacion';
+  currentUserSubject: BehaviorSubject<any>;
   constructor(private http: HttpClient) {
     console.log("el servicio esta corriendo")
-    this.currentUserObject = new BehaviorSubject<any>(JSON.parse(sessionStorage.getItem('currentUser') || '{}'));
+    this.currentUserSubject = new BehaviorSubject<any>(JSON.parse(sessionStorage.getItem('currentUser') || '{}'));
+   }
+
+   IniciarSesion(credenciales:any): Observable<any> {
+    return this.http.post(this.url, credenciales).pipe(map(data=>{
+      sessionStorage.setItem('currentUser', JSON.stringify(data));
+      this.currentUserSubject.next(data);
+      return data;
+    }))
+   }
+
+   get UsuarioAutenticado(){
+    return this.currentUserSubject.value;
    }
 }

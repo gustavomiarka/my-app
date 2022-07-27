@@ -10,11 +10,13 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { HardSoftComponent } from './componentes/hard-soft/hard-soft.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthModule } from '@auth0/auth0-angular';
+import { InterceptorService } from './servicios/interceptor.service';
+import { PorfolioService } from './servicios/porfolio.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { AuthModule } from '@auth0/auth0-angular';
       clientId: 'WEd05zvsEiddX7wD1FEAi6X1kL9fBwWN'
     }),
   ],
-  providers: [],
+  providers: [PorfolioService, 
+    {provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
