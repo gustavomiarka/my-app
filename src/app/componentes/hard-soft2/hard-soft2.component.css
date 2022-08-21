@@ -15,6 +15,11 @@
     text-align: center;
 }
 
+.btn-soft{
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+}
+
 .hab{
     display: inline-block;
 }
@@ -30,6 +35,24 @@
 
 .progress{
     margin-top: 4px;
+}
+
+@media screen and (max-width: 450px){
+    .hab-progress{
+        flex-direction: column;
+       
+    }
+
+    .progress{
+        width: 10rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .hab-progress{
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 768px) {

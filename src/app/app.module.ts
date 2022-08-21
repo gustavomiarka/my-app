@@ -26,6 +26,7 @@ import { EditHab2Component } from './componentes/hard-soft2/edit-hab2.component'
 import { NewHabComponent } from './componentes/hard-soft/new-hab.component';
 import { HardSoft2Component } from './componentes/hard-soft2/hard-soft2.component';
 import { NewHab2Component } from './componentes/hard-soft2/new-hab2.component';
+import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { NewHab2Component } from './componentes/hard-soft2/new-hab2.component';
     EditHab2Component,
     NewHabComponent,
     NewHab2Component,
-    HardSoft2Component
+    HardSoft2Component,
+    EditAcercaDeComponent
   ],
   imports: [
     BrowserModule,

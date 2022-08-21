@@ -1,0 +1,21 @@
+.imag_pie{
+    width: 400px;
+}
+
+.pie_name{
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+    blockquote {
+        padding-top: 74%;
+    }
+
+    #imag{
+        left:3rem;
+    }
+
+    .pie_name{
+    padding-right: 2rem;
+    }
+}

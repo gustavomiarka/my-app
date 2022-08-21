@@ -2,15 +2,15 @@
     
     <div class="div-exp">
       <h3 class="card-title">Experiencia</h3>
-      <button type= "button" routerLink="/nuevaExp"  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
+      <button type= "button" routerLink="/nuevaExp"  class="btn btn-exp btn-primary" *ngIf="isLogged"> Agregar</button>
     </div>
 <ul class="item-list">
   <li *ngFor="let Experiencia of expe">
    <div class="exp">
        <h4 class="sub-1">{{Experiencia.titulo}}</h4>
        <div class="div-exp2">
-        <button type= "button" routerLink="/editExp/{{Experiencia.id}}"  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
-        <button type= "button" class="btn btn-primary" *ngIf="isLogged" (click)="deleteExperiencia(Experiencia.id)"> Eliminar</button>
+        <button type= "button" routerLink="/editExp/{{Experiencia.id}}"  class="btn btn-exp  btn-primary" *ngIf="isLogged"> Editar</button>
+        <button type= "button" class="btn btn-exp  btn-primary" *ngIf="isLogged" (click)="deleteExperiencia(Experiencia.id)"> Eliminar</button>
       </div>
        <h5>Empresa: {{Experiencia.nombreEmpresa}}</h5>
        <h5>Fecha: <time>{{Experiencia.fechaIni}}</time> - <time>{{Experiencia.fechaFin}}</time></h5>

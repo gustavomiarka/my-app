@@ -1,0 +1,34 @@
+<div class="container" >
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="formgroup">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" class="form-control" [(ngModel)]="persona.nombre" required>
+                </div>
+                <div class="formgroup">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" class="form-control" [(ngModel)]="persona.apellido" required>
+                </div>
+                <div class="formgroup">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" class="form-control" [(ngModel)]="persona.email" required>
+                </div>
+                <div class="formgroup">
+                    <label for="sobre_mi">Sobre mi</label>
+                    <input type="text" name="sobre_mi" class="form-control" [(ngModel)]="persona.sobre_mi" required>
+                </div>
+                <div class="formgroup">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo" class="form-control" [(ngModel)]="persona.titulo" required>
+                </div>
+                <div class="formgroup">
+                    <label for="url_foto">Url foto</label>
+                    <input type="text" name="url_foto" class="form-control" [(ngModel)]="persona.url_foto" required>
+                </div>
+                
+                <button class="btn btn-primary" >Actualizar Persona</button>
+            </form>
+        </div>
+    </div>
+</div>

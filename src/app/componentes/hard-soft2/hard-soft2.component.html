@@ -2,7 +2,7 @@
 
 <div class="div-hab2">
     <h3 class="hab">Habilidades Soft</h3>
-    <button type= "button" routerLink="/nuevaHab2"  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
+    <button type= "button" routerLink="/nuevaHab2"  class="btn btn-soft btn-primary" *ngIf="isLogged"> Agregar</button>
   </div>
 <ul class="item-list">
 <li *ngFor="let Soft of soft">
@@ -15,8 +15,8 @@
     </div>
   </div>
     <div class="botones">
-      <button type= "button" routerLink="/editHab2/{{Soft.id}}"  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
-      <button type= "button" class="btn btn-primary" *ngIf="isLogged" (click)="deleteSoft(Soft.id)"> Eliminar</button>
+      <button type= "button" routerLink="/editHab2/{{Soft.id}}"  class="btn btn-soft btn-primary" *ngIf="isLogged"> Editar</button>
+      <button type= "button" class="btn btn-soft btn-primary" *ngIf="isLogged" (click)="deleteSoft(Soft.id)"> Eliminar</button>
     </div>
 </div>
 </li>

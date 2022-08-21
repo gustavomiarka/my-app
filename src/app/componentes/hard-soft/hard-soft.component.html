@@ -2,7 +2,7 @@
     
     <div class="div-hab2">
       <h3 class="hab">Habilidades Hard</h3>
-      <button type= "button" routerLink="/nuevaHab"  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
+      <button type= "button" routerLink="/nuevaHab"  class="btn btn-hard btn-primary" *ngIf="isLogged"> Agregar</button>
     </div>
     
 
@@ -17,8 +17,8 @@
             </div>
           </div>
             <div class="botones">
-              <button type= "button" routerLink="/editHab/{{Hard.id}}"  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
-              <button type= "button"  class="btn btn-primary" *ngIf="isLogged" (click)="deleteHard(Hard.id)"> Eliminar</button>
+              <button type= "button" routerLink="/editHab/{{Hard.id}}"  class="btn btn-hard btn-primary" *ngIf="isLogged"> Editar</button>
+              <button type= "button"  class="btn btn-hard btn-primary" *ngIf="isLogged" (click)="deleteHard(Hard.id)"> Eliminar</button>
             </div>
          </div>
         </li>

@@ -1,3 +1,17 @@
+.card-title{
+    padding-left: 2rem;
+}
+
 .p-acerca-de{
     padding-right: 2rem;
+}
+
+
+.btn-acercaDe{
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+}
+
+.acerca_de{
+    width: 650px;
 }

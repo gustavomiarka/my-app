@@ -335,6 +335,8 @@ blockquote{
         padding-top: 52%;
     }
 
+    
+
 
 }
 
@@ -345,6 +347,10 @@ blockquote{
 
     blockquote{
         padding-top: 42%;
+    }
+    
+    .p-acerca_de{
+        padding-left: 2rem;
     }
 }
 
@@ -382,7 +388,7 @@ blockquote{
         width:250px;
     }
     #imag{
-        width: 200px!important;
+        width: 275px!important;
     }
     blockquote{
         padding-top: 12%;
