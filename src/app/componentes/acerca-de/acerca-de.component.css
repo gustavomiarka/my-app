@@ -15,3 +15,9 @@
 .acerca_de{
     width: 650px;
 }
+
+@media screen and (max-width: 750px) {
+    .card-acerca_de{
+        padding-left: 7rem;
+    }
+}
