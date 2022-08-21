@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdateSoft()" novalidate #f="ngForm">
+                <div class="formgroup">
+                    <label for="habilidadSoft">Habilidad</label>
+                    <input type="text" name="habilidadSoft" class="form-control" [(ngModel)]="soft.habilidadSoft" required>
+                </div>
+                <div class="formgroup">
+                    <label for="porcentaje">Porcentaje</label>
+                    <input type="text" name="porcentaje" class="form-control" [(ngModel)]="soft.porcentaje" required>
+                </div>
+                
+                
+                <button class="btn btn-primary" >Actualizar Habilidad</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -15,7 +15,7 @@ export class ProyectosService {
     return this.http.get<proyectos[]>(this.url + '/ver/');
   }
 
-  public saveProyectosn(proyecto:proyectos): Observable<any>{
+  public saveProyectos(proyectos:proyectos): Observable<any>{
     return this.http.post<any>(this.url + '/new', proyectos);
   }
 

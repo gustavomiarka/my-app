@@ -1,0 +1,25 @@
+<article id="hard_soft">
+
+<div class="div-hab2">
+    <h3 class="hab">Habilidades Soft</h3>
+    <button type= "button" routerLink="/nuevaHab2"  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
+  </div>
+<ul class="item-list">
+<li *ngFor="let Soft of soft">
+<div class="exp">
+  <div class="hab-progress">
+    <h5 class="sub-1">{{Soft.habilidadSoft}}</h5>
+    
+    <div class="progress">
+      <div id="barra3" class="progress-bar progress-bar-striped progress-bar-animated  animacion" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width.%]="Soft.porcentaje">{{Soft.porcentaje}}</div>
+    </div>
+  </div>
+    <div class="botones">
+      <button type= "button" routerLink="/editHab2/{{Soft.id}}"  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
+      <button type= "button" class="btn btn-primary" *ngIf="isLogged" (click)="deleteSoft(Soft.id)"> Eliminar</button>
+    </div>
+</div>
+</li>
+</ul>
+
+</article>

@@ -31,4 +31,10 @@ export class ProyectosComponent implements OnInit {
       this.proyec= data;
     })
   }
+
+  deleteProyectos(id?:number ): void {
+    this.proyectosService.deleteProyectos(id).subscribe(data => {
+      this.cargarProyectos();
+    })
+  }
 }

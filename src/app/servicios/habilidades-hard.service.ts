@@ -23,7 +23,11 @@ export class HabilidadesHardService {
     return this.http.delete<any>(this.url + `/delete/${id}`);
   }
 
-  public updateHabilidadesHard(id:number): Observable<any>{
+  public detailHabilidadesHard(id:number): Observable<any>{
+    return this.http.get<any>(this.url + `/detail/${id}`);
+  }
+
+  public updateHabilidadesHard(id:number, habilidadesHard:habilidadesHard): Observable<any>{
     return this.http.put<any>(this.url + `/update/${id}`, habilidadesHard);
   }
 }

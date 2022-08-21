@@ -31,4 +31,10 @@ export class ExperienciaComponent implements OnInit {
   })
   }
 
+  deleteExperiencia(id?:number ): void {
+    this.experienciaService.deleteExperiencia(id).subscribe(data => {
+      this.cargarExperiencia();
+    })
+  }
+
 }

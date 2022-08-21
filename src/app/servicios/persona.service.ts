@@ -15,4 +15,20 @@ export class PersonaService {
   public getPersona(): Observable<persona>{
     return this.http.get<persona>(this.url + '/ver/perfil');
   }
+
+  public savePersona(persona:persona): Observable<any>{
+    return this.http.post<any>(this.url + '/new', persona);
+  }
+
+  public deletePersona(id:number): Observable<any>{
+    return this.http.delete<any>(this.url + `/delete/${id}`);
+  }
+
+  public detailPersona(id:number): Observable<any>{
+    return this.http.get<any>(this.url + `/detail/${id}`);
+  }
+
+  public updatePersona(id:number, persona:persona): Observable<any>{
+    return this.http.put<any>(this.url + `/update/${id}`, persona);
+  }
 }

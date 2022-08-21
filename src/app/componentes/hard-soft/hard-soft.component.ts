@@ -14,7 +14,7 @@ import { TokenService } from 'src/app/servicios/token.service';
 export class HardSoftComponent implements OnInit {
  
   hard: habilidadesHard[]=[];
-  soft: habilidadesSoft[]=[];
+  
   
 
 
@@ -23,7 +23,6 @@ export class HardSoftComponent implements OnInit {
   isLogged = false;
   ngOnInit(): void {
     this.cargarHard();
-    this.cargarSoft();
     if (this.tokenService.getToken()) {
       this.isLogged = true;
     } else{
@@ -36,9 +35,13 @@ export class HardSoftComponent implements OnInit {
       this.hard = data;
     });
   }
-  cargarSoft(): void {
-    this.habilidadesSoftService.getHabilidadesSoft().subscribe(data => {
-      this.soft = data;
+
+  
+
+  deleteHard(id?:number ): void {
+    this.habilidadesHardService.deleteHabilidadesHard(id).subscribe(data => {
+      this.cargarHard();
     })
   }
+
 }

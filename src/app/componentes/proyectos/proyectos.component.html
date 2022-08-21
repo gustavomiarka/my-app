@@ -2,15 +2,15 @@
     
     <div class="div-exp">
       <h3 class="card-title">Proyectos</h3>
-      <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
+      <button type= "button" routerLink="/nuevoProyecto"  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
       </div>
 <ul class="item-list">
   <li *ngFor="let Proyecto of proyec">
     <div class="proyecto">
         <h4 class="sub-1">{{Proyecto.titulo}}</h4>
         <div class="div-exp2">
-          <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
-          <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Eliminar</button>
+          <button type= "button" routerLink="/editProyec/{{Proyecto.id}}" class="btn btn-primary" *ngIf="isLogged"> Editar</button>
+          <button type= "button" class="btn btn-primary" *ngIf="isLogged" (click)="deleteProyectos(Proyecto.id)"> Eliminar</button>
           </div>
         <h5>Fecha: <time>{{Proyecto.fechaIni}}</time> - <time>{{Proyecto.fechaFin}}</time></h5>
         <p>{{Proyecto.descripcion}}</p>

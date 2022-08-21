@@ -18,6 +18,14 @@ import { interceptorProvider } from './servicios/interceptor.service';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
+import { EditProyectosComponent } from './componentes/proyectos/edit-proyectos.component';
+import { NewProyectosComponent } from './componentes/proyectos/new-proyectos.component';
+import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
+import { EditHabComponent } from './componentes/hard-soft/edit-hab.component';
+import { EditHab2Component } from './componentes/hard-soft2/edit-hab2.component';
+import { NewHabComponent } from './componentes/hard-soft/new-hab.component';
+import { HardSoft2Component } from './componentes/hard-soft2/hard-soft2.component';
+import { NewHab2Component } from './componentes/hard-soft2/new-hab2.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +41,15 @@ import { EditEducacionComponent } from './componentes/educacion/edit-educacion.c
     PortfolioComponent,
     NewExperienciaComponent,
     NewEducacionComponent,
-    EditEducacionComponent
+    EditEducacionComponent,
+    EditProyectosComponent,
+    NewProyectosComponent,
+    EditExperienciaComponent,
+    EditHabComponent,
+    EditHab2Component,
+    NewHabComponent,
+    NewHab2Component,
+    HardSoft2Component
   ],
   imports: [
     BrowserModule,
