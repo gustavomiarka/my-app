@@ -23,7 +23,11 @@ export class EducacionService {
     return this.http.delete<any>(this.url + `/delete/${id}`);
   }
 
-  public updateEducacion(id:number): Observable<any>{
+  public detailEducacion(id:number): Observable<any>{
+    return this.http.get<any>(this.url + `/detail/${id}`);
+  }
+
+  public updateEducacion(id:number, educacion:educacion): Observable<any>{
     return this.http.put<any>(this.url + `/update/${id}`, educacion);
   }
 }

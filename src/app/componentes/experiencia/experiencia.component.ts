@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ExperienciaService } from 'src/app/servicios/experiencia.service';
 import { TokenService } from 'src/app/servicios/token.service';
-import { experiencia_lab} from 'src/app/model/experiencia.model';
+import { ExperienciaLab} from 'src/app/model/experiencia.model';
 
 @Component({
   selector: 'app-experiencia',
@@ -10,7 +10,7 @@ import { experiencia_lab} from 'src/app/model/experiencia.model';
 })
 export class ExperienciaComponent implements OnInit {
   
-  expe: experiencia_lab[] = [];
+  expe: ExperienciaLab[] = [];
 
   constructor(private experienciaService: ExperienciaService, private tokenService: TokenService) { }
 

@@ -1,15 +1,15 @@
 <article id="educacion">
         <div class="div-exp">
           <h3 class="card-title">Educación</h3>
-          <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
+          <button type= "button" routerLink="/nuevaEdu"  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
         </div>
     <ul class="item-list">
       <li *ngFor="let Educacion of edu">
         <div class="edu">
             <h4 class="sub-1">{{Educacion.instituto}}</h4>
             <div class="div-exp2">
-              <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
-              <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Eliminar</button>
+              <button type= "button" routerLink="/editEdu/{{Educacion.id}}"  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
+              <button type= "button" class="btn btn-primary" *ngIf="isLogged" (click)="deleteEducacion(Educacion.id)" > Eliminar</button>
               </div>
             <h5>Carrera: {{Educacion.carrera}}</h5>
             <h5>Fecha: <time>{{Educacion.fechaIni}}</time> - <time>{{Educacion.fechaFin}}</time></h5>

@@ -1,4 +1,4 @@
-export class experiencia_lab{
+export class ExperienciaLab{
     id?: number;
     nombreEmpresa : string;
     fechaIni: string;

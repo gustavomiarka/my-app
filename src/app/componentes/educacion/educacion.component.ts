@@ -32,4 +32,10 @@ export class EducacionComponent implements OnInit {
       this.edu=data;
     })
   }
+
+  deleteEducacion(id?:number ): void {
+    this.educacionService.deleteEducacion(id).subscribe(data => {
+      this.cargarEducacion();
+    })
+  }
 }
