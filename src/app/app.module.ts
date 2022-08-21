@@ -13,10 +13,9 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { AuthModule } from '@auth0/auth0-angular';
-import { InterceptorService } from './servicios/interceptor.service';
-import { PorfolioService } from './servicios/porfolio.service';
+import {FormsModule} from '@angular/forms';
+import { interceptorProvider } from './servicios/interceptor.service';
+import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -29,21 +28,16 @@ import { PorfolioService } from './servicios/porfolio.service';
     HardSoftComponent,
     ProyectosComponent,
     IniciarSesionComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    NewExperienciaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    AuthModule.forRoot({
-      domain: 'dev-n1az-e18.us.auth0.com',
-      clientId: 'WEd05zvsEiddX7wD1FEAi6X1kL9fBwWN'
-    }),
+    FormsModule,
   ],
-  providers: [PorfolioService, 
-    {provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}
-  ],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

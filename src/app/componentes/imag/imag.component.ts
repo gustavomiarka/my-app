@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/servicios/persona.service';
 
 @Component({
   selector: 'app-imag',
@@ -7,13 +8,13 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./imag.component.css']
 })
 export class ImagComponent implements OnInit {
-  miPorfolio:any;
-  constructor(private datosPorfolio:PorfolioService) { }
+  persona: persona = new persona("", "", "", "", "", "")
+  constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.miPorfolio=data;
+    this.personaService.getPersona().subscribe(data =>{
+      
+      this.persona=data;
     });
   }
 

@@ -1,19 +1,20 @@
 <article id="proyectos">
-    <h3 class="card-title">Proyectos</h3>
+    
     <div class="div-exp">
-        <a href="#" class="btn"><i class="fa-solid fa-plus"></i></a>
+      <h3 class="card-title">Proyectos</h3>
+      <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
       </div>
 <ul class="item-list">
-  <li *ngFor="let proyect of proyectList">
+  <li *ngFor="let Proyecto of proyec">
     <div class="proyecto">
-        <h4 class="sub-1">{{proyect.title}}</h4>
+        <h4 class="sub-1">{{Proyecto.titulo}}</h4>
         <div class="div-exp2">
-            <a href="#" class="btn"><i class="fa-solid fa-pen"></i></a>
-            <a href="#" class="btn"><i class="fa-regular fa-trash-can"></i></a>
+          <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
+          <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Eliminar</button>
           </div>
-        <h5>Fecha: <time>{{proyect.start}}</time> - <time>{{proyect.end}}</time></h5>
-        <p>{{proyect.detail}}</p>
-        <span>Visita el link a <a [href]="proyect.link" target="_blank">{{proyect.title}}</a> para conocerlo.</span>
+        <h5>Fecha: <time>{{Proyecto.fechaIni}}</time> - <time>{{Proyecto.fechaFin}}</time></h5>
+        <p>{{Proyecto.descripcion}}</p>
+        <span>Visita el link a <a [href]="Proyecto.link" target="_blank">{{Proyecto.titulo}}</a> para conocerlo.</span>
     </div>
   </li>
 </ul>

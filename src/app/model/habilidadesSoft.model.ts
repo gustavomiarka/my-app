@@ -1,6 +1,6 @@
 export class habilidadesSoft{
     id?: number;
-    habilidadSoft : String;
+    habilidadSoft : string;
     porcentaje: number;
 
     constructor(habilidadSoft: string, porcentaje: number) {

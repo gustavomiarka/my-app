@@ -8,10 +8,22 @@ import { educacion } from '../model/educacion.model';
 })
 export class EducacionService {
 
-  url = 'http://localhost:8080/';
+  url = 'http://localhost:8080/educacion';
   constructor(private http: HttpClient) { }
 
-  public getEducacion(): Observable<educacion>{
-    return this.http.get<educacion>(this.url + '/ver/educacion');
+  public getEducacion(): Observable<educacion[]>{
+    return this.http.get<educacion[]>(this.url + '/ver/');
+  }
+
+  public saveEducacion(educacion:educacion): Observable<any>{
+    return this.http.post<any>(this.url + '/new', educacion);
+  }
+
+  public deleteEducacion(id:number): Observable<any>{
+    return this.http.delete<any>(this.url + `/delete/${id}`);
+  }
+
+  public updateEducacion(id:number): Observable<any>{
+    return this.http.put<any>(this.url + `/update/${id}`, educacion);
   }
 }

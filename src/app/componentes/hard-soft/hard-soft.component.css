@@ -1,5 +1,8 @@
-.card-title{
-    display: inline-block;
+
+.hab-progress{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
 }
 
 .div-hab {
@@ -9,6 +12,7 @@
 
 .div-hab2{
     display: block;
+    text-align: center;
 }
 
 .hab{

@@ -1,42 +1,47 @@
 <article id="hard_soft">
-    <div class="div-hab">
-      <h3 class="card-title">Habilidades Hard and Soft</h3>
-    
-      <a href="#" class="btn" title="Agregar"><i class="fa-solid fa-plus"></i></a>
-    </div>
     
     <div class="div-hab2">
-      <h4 class="hab">Habilidades Hard</h4>
-      <a href="#" class="btn" title="Editar"><i class="fa-solid fa-pen"></i></a>
-      <a href="#" class="btn" title="Eliminar"><i class="fa-regular fa-trash-can"></i></a>
+      <h3 class="hab">Habilidades Hard</h3>
+      <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
     </div>
     
 
       <ul class="item-list">
-        <li *ngFor="let habilidadHard of habilidadList">
+        <li *ngFor="let Hard of hard">
          <div class="exp">
-             <h5 class="sub-1">{{habilidadHard.name}}</h5>
+          <div class="hab-progress">
+             <h5 class="sub-1">{{Hard.habilidadHard}}</h5>
              
             <div class="progress">
-              <div id="barra3" class="progress-bar progress-bar-striped progress-bar-animated  animacion" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width]="habilidadHard.progreso">{{habilidadHard.progreso}}</div>
+              <div id="barra3" class="progress-bar progress-bar-striped progress-bar-animated  animacion" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width.%]="Hard.porcentaje">{{Hard.porcentaje}}</div>
+            </div>
+          </div>
+            <div class="botones">
+              <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
+              <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Eliminar</button>
             </div>
          </div>
         </li>
       </ul>
 
       
-      <div class="div-hab2">
-        <h4 class="hab">Habilidades Soft</h4>
-              <a href="#" class="btn" title="Editar"><i class="fa-solid fa-pen"></i></a>
-              <a href="#" class="btn" title="Eliminar"><i class="fa-regular fa-trash-can"></i></a>
-            </div>
+          <div class="div-hab2">
+            <h3 class="hab">Habilidades Soft</h3>
+            <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
+          </div>
       <ul class="item-list">
-        <li *ngFor="let habilidadSoft of habilidadList2">
+        <li *ngFor="let Soft of soft">
         <div class="exp">
-            <h5 class="sub-1">{{habilidadSoft.name}}</h5>
+          <div class="hab-progress">
+            <h5 class="sub-1">{{Soft.habilidadSoft}}</h5>
             
             <div class="progress">
-              <div id="barra3" class="progress-bar progress-bar-striped progress-bar-animated  animacion" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width]="habilidadSoft.progreso">{{habilidadSoft.progreso}}</div>
+              <div id="barra3" class="progress-bar progress-bar-striped progress-bar-animated  animacion" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width.%]="Soft.porcentaje">{{Soft.porcentaje}}</div>
+            </div>
+          </div>
+            <div class="botones">
+              <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
+              <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Eliminar</button>
             </div>
         </div>
         </li>

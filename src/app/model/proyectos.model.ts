@@ -1,12 +1,12 @@
 export class proyectos {
     id?: number;
-    titulo : String;
-    fechaIni: String;
-    fechaFin: String;
-    descripcion: String;
-    link: String;
+    titulo : string;
+    fechaIni: string;
+    fechaFin: string;
+    descripcion: string;
+    link: string;
 
-    constructor(titulo : String, fechaIni : String, fechaFin : String, descripcion : String, link : String) {
+    constructor(titulo : string, fechaIni : string, fechaFin : string, descripcion : string, link : string) {
         this.titulo = titulo;
         this.fechaIni = fechaIni;  
         this.fechaFin = fechaFin;

@@ -8,12 +8,12 @@ import { PersonaService } from 'src/app/servicios/persona.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
-  persona: persona = new persona("", "", "", "", "", "", "", "", "",)
-  constructor(private personaService: PersonaService) { }
+  persona: persona = new persona("", "", "", "", "", "",);
+  constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data =>{
-      console.log(data);
+      
       this.persona=data;
     });
   }

@@ -8,10 +8,10 @@ import { proyectos } from '../model/proyectos.model';
 })
 export class ProyectosService {
 
-  url = 'http://localhost:8080/';
+  url = 'http://localhost:8080/proyecto';
   constructor(private http: HttpClient) { }
 
-  public getProyectos(): Observable<proyectos>{
-    return this.http.get<proyectos>(this.url + 'ver/proyecto');
+  public getProyectos(): Observable<proyectos[]>{
+    return this.http.get<proyectos[]>(this.url + '/ver/');
   }
 }

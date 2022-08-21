@@ -1,11 +1,11 @@
 export class educacion{
     id?: number;
-    instituto : String;
-    fechaIni: String;
-    fechaFin: String;
-    carrera : String;
+    instituto : string;
+    fechaIni: string;
+    fechaFin: string;
+    carrera : string;
 
-    constructor(instituto : String, fechaIni : String, fechaFin : String, carrera : String) {
+    constructor(instituto : string, fechaIni : string, fechaFin : string, carrera : string) {
         this.instituto = instituto;
         this.fechaIni = fechaIni;  
         this.fechaFin = fechaFin;

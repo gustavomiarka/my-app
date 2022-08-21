@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { proyectos } from 'src/app/model/proyectos.model';
+import { ProyectosService } from 'src/app/servicios/proyectos.service';
+import { TokenService } from 'src/app/servicios/token.service';
+
 
 @Component({
   selector: 'app-proyectos',
@@ -7,14 +10,25 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent implements OnInit {
-  proyectList:any;
-  constructor(private datosPorfolio:PorfolioService) { }
+ 
+  proyec: proyectos[]=[];
+
+  constructor(private proyectosService: ProyectosService, private tokenService: TokenService) { }
+
+  isLogged = false;
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.proyectList=data.proyect;
-    });
+    this.cargarProyectos();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else{
+      this.isLogged = false;
+    }
   }
 
+  cargarProyectos(): void {
+    this.proyectosService.getProyectos().subscribe(data =>{
+      this.proyec= data;
+    })
+  }
 }

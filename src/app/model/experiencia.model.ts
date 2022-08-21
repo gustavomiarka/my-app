@@ -1,12 +1,12 @@
-export class experiencia{
+export class experiencia_lab{
     id?: number;
-    nombreEmpresa : String;
-    fechaIni: String;
-    fechaFin: String;
-    descripcion: String;
-    titulo: String;
+    nombreEmpresa : string;
+    fechaIni: string;
+    fechaFin: string;
+    descripcion: string;
+    titulo: string;
 
-    constructor(nombreEmpresa : String, fechaIni : String, fechaFin : String, descripcion : String, titulo : String) {
+    constructor(nombreEmpresa : string, fechaIni : string, fechaFin : string, descripcion : string, titulo : string) {
         this.nombreEmpresa = nombreEmpresa;
         this.fechaIni = fechaIni;  
         this.fechaFin = fechaFin;

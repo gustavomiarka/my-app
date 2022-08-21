@@ -1,19 +1,18 @@
 <article id="educacion">
- 
-        <h3 class="card-title">Educación</h3>
         <div class="div-exp">
-            <a href="#" class="btn"><i class="fa-solid fa-plus"></i></a>
+          <h3 class="card-title">Educación</h3>
+          <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Agregar</button>
         </div>
     <ul class="item-list">
-      <li *ngFor="let educacion of educationList">
+      <li *ngFor="let Educacion of edu">
         <div class="edu">
-            <h4 class="sub-1">{{educacion.school}}</h4>
+            <h4 class="sub-1">{{Educacion.instituto}}</h4>
             <div class="div-exp2">
-                <a href="#" class="btn"><i class="fa-solid fa-pen"></i></a>
-                <a href="#" class="btn"><i class="fa-regular fa-trash-can"></i></a>
+              <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Editar</button>
+              <button type= "button" routerLink=""  class="btn btn-primary" *ngIf="isLogged"> Eliminar</button>
               </div>
-            <h5>Carrera: {{educacion.career}}</h5>
-            <h5>Fecha: <time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></h5>
+            <h5>Carrera: {{Educacion.carrera}}</h5>
+            <h5>Fecha: <time>{{Educacion.fechaIni}}</time> - <time>{{Educacion.fechaFin}}</time></h5>
         </div>   
     </li>
   </ul>

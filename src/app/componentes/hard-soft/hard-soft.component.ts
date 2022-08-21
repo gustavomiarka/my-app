@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { habilidadesHard } from 'src/app/model/habilidadesHard.model';
+import { habilidadesSoft } from 'src/app/model/habilidadesSoft.model';
+import { HabilidadesHardService } from 'src/app/servicios/habilidades-hard.service';
+import { HabilidadesSoftService } from 'src/app/servicios/habilidades-soft.service';
+import { TokenService } from 'src/app/servicios/token.service';
+
 
 @Component({
   selector: 'app-hard-soft',
@@ -7,16 +12,33 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./hard-soft.component.css']
 })
 export class HardSoftComponent implements OnInit {
-  habilidadList:any;
-  habilidadList2:any;
-  constructor(private datosPorfolio:PorfolioService) { }
+ 
+  hard: habilidadesHard[]=[];
+  soft: habilidadesSoft[]=[];
+  
 
+
+  constructor(private habilidadesHardService:HabilidadesHardService, private habilidadesSoftService:HabilidadesSoftService ,private tokenService: TokenService) { }
+
+  isLogged = false;
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.habilidadList=data.habilidadHard;
-      this.habilidadList2=data.habilidadSoft;
-    });
+    this.cargarHard();
+    this.cargarSoft();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else{
+      this.isLogged = false;
+    }
   }
 
+  cargarHard(): void {
+    this.habilidadesHardService.getHabilidadesHard().subscribe(data =>{
+      this.hard = data;
+    });
+  }
+  cargarSoft(): void {
+    this.habilidadesSoftService.getHabilidadesSoft().subscribe(data => {
+      this.soft = data;
+    })
+  }
 }
