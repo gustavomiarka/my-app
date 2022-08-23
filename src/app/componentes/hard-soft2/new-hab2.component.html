@@ -4,11 +4,11 @@
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="formgroup">
                     <label for="habilidadHard">Habilidad</label>
-                    <input type="text" name="habilidadHard" class="form-control" [(ngModel)]="habilidadesSoft" required>
+                    <input type="text" name="habilidadHard" class="form-control" placeholder="Tipo de Habilidad" [(ngModel)]="habilidadesSoft" required>
                 </div>
                 <div class="formgroup">
                     <label for="porcentaje">Porcentaje</label>
-                    <input type="text" name="porcentaje" class="form-control" [(ngModel)]="porcentaje" required>
+                    <input type="text" name="porcentaje" class="form-control" placeholder="Cantidad de 0 a 100 que le represente" [(ngModel)]="porcentaje" required>
                 </div>
                 
                 

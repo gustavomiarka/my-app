@@ -6,6 +6,10 @@
     padding-left: 2rem;
 }
 
+blockquote {
+    margin-left: 1rem;
+}
+
 @media screen and (max-width: 450px) {
     blockquote {
         padding-top: 74%;
