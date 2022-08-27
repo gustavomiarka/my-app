@@ -10,7 +10,7 @@ import { ExperienciaService } from 'src/app/servicios/experiencia.service';
 })
 export class EditExperienciaComponent implements OnInit {
 
-  expe: ExperienciaLab= null;
+  expe : ExperienciaLab = null;
 
   constructor( private experienciaService: ExperienciaService , private activatedRoute: ActivatedRoute, private router: Router) { }
 

@@ -39,9 +39,9 @@ onLogin(): void {
     this.tokenService.setAuthorities(data.authorities);
     this.roles = data.authorities;
     this.router.navigate(['']);
-    console.log("funciona")
+    
   }, err =>{
-    console.log("fallooo")
+    
     this.isLogged = false;
     this.isLoginFailed = true;
     this.errorMsg = err.error.message;

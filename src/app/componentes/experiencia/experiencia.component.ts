@@ -3,6 +3,8 @@ import { ExperienciaService } from 'src/app/servicios/experiencia.service';
 import { TokenService } from 'src/app/servicios/token.service';
 import { ExperienciaLab} from 'src/app/model/experiencia.model';
 
+
+
 @Component({
   selector: 'app-experiencia',
   templateUrl: './experiencia.component.html',
@@ -37,4 +39,5 @@ export class ExperienciaComponent implements OnInit {
     })
   }
 
+  
 }

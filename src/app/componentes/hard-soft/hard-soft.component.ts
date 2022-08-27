@@ -18,7 +18,7 @@ export class HardSoftComponent implements OnInit {
   
 
 
-  constructor(private habilidadesHardService:HabilidadesHardService, private habilidadesSoftService:HabilidadesSoftService ,private tokenService: TokenService) { }
+  constructor(private habilidadesHardService:HabilidadesHardService, private tokenService: TokenService) { }
 
   isLogged = false;
   ngOnInit(): void {
