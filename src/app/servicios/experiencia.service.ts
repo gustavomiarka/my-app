@@ -8,7 +8,7 @@ import { ExperienciaLab } from '../model/experiencia.model';
 })
 export class ExperienciaService {
 
-  urlExp = 'http://localhost:8080/experiencia';
+  urlExp = ' https://backend-porfolio-g.herokuapp.com/experiencia';
   constructor(private http: HttpClient) { }
 
   public getExperiencia(): Observable<ExperienciaLab[]>{

@@ -8,7 +8,7 @@ import { habilidadesSoft } from '../model/habilidadesSoft.model';
 })
 export class HabilidadesSoftService {
 
-  url = 'http://localhost:8080/soft';
+  url = ' https://backend-porfolio-g.herokuapp.com/soft';
   constructor(private http: HttpClient) { }
 
   public getHabilidadesSoft(): Observable<habilidadesSoft[]>{
