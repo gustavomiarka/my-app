@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div>
-            <form (ngSubmit)="onUpdateSoft()" novalidate #f="ngForm">
+            <form (ngSubmit)="onUpdateSoft()" *ngIf="soft" novalidate #f="ngForm">
                 <div class="formgroup">
                     <label for="habilidadSoft">Habilidad</label>
                     <input type="text" name="habilidadSoft" class="form-control" [(ngModel)]="soft.habilidadSoft" required>

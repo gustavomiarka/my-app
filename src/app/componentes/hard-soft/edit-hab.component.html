@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div>
-            <form (ngSubmit)="onUpdateHard()" novalidate #f="ngForm">
+            <form (ngSubmit)="onUpdateHard()" *ngIf="hard" novalidate #f="ngForm">
                 <div class="formgroup">
                     <label for="habilidadHard">Habilidad</label>
                     <input type="text" name="habilidadHard" class="form-control" [(ngModel)]="hard.habilidadHard" required>
